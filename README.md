@@ -1,6 +1,6 @@
 
 # TEMI 
-Tumor Elemzés Mesterséges Intelligenciával (stands for: Tumor Analysis with Artificial Intelligence)
+_Tumor Elemzés Mesterséges Intelligenciával (stands for: Tumor Analysis with Artificial Intelligence)_
 
 This is one of my secondary school projects; for me, it was kind of like an introduction to medical AI, php gateways, data pipelines, and web dev as well. I did use the help and knowledge of some of the best programmers & mentors in the world: claude sonnet and chat.gpt
 Mostly I did the coding and the research, eating up around 650-700 h of coding and approximately 150-200 h of research.
@@ -21,7 +21,7 @@ What makes this especially sobering: a significant portion of these deaths are a
  
 ## 🎯 Project Goal
  
-For the solution we need to ask: *How can a system be built that creates an international central database targeting tumor diseases and — using artificial intelligence — minimizes the human error factor for both the physician and the patient?*
+For the solution we need to ask: _How can a system be built that creates an international central database targeting tumor diseases and — using artificial intelligence — minimizes the human error factor for both the physician and the patient?_
  
 TEMI is not meant to replace oncologists. It is designed to **augment them** — much like autopilots assist (but don't replace) commercial pilots.
  
