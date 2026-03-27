@@ -1,0 +1,95 @@
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567897^",^"bdate^":^"2014-01-01^",^"neme^":^"1^",^"felmenok_sz^":^"4^",^"sugarzas^":^"6^",^"legsz^":^"7^",^"vizsz^":^"4^",^"vegyi^":^"6^",^"dohany^":^"4^",^"alkesz^":^"4^",^"vhus^":^"8^",^"egelelem^":^"2^",^"nemrostos^":^"8^",^"sulyfeles^":^"3^",^"mozgas^":^"7^",^"stressz^":^"3^",^"alvas^":^"8^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1596-01-12^",^"neme^":^"1^",^"felmenok_sz^":^"6^",^"sugarzas^":^"3^",^"legsz^":^"8^",^"vizsz^":^"2^",^"vegyi^":^"8^",^"dohany^":^"3^",^"alkesz^":^"8^",^"vhus^":^"3^",^"egelelem^":^"3^",^"nemrostos^":^"7^",^"sulyfeles^":^"3^",^"mozgas^":^"9^",^"stressz^":^"3^",^"alvas^":^"8^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1212-12-12^",^"neme^":^"1^",^"felmenok_sz^":^"0^",^"sugarzas^":^"1^",^"legsz^":^"1^",^"vizsz^":^"1^",^"vegyi^":^"1^",^"dohany^":^"1^",^"alkesz^":^"1^",^"vhus^":^"1^",^"egelelem^":^"1^",^"nemrostos^":^"1^",^"sulyfeles^":^"1^",^"mozgas^":^"1^",^"stressz^":^"1^",^"alvas^":^"1^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1212-12-12^",^"neme^":^"1^",^"felmenok_sz^":^"0^",^"sugarzas^":^"1^",^"legsz^":^"1^",^"vizsz^":^"1^",^"vegyi^":^"1^",^"dohany^":^"1^",^"alkesz^":^"1^",^"vhus^":^"1^",^"egelelem^":^"1^",^"nemrostos^":^"1^",^"sulyfeles^":^"1^",^"mozgas^":^"1^",^"stressz^":^"1^",^"alvas^":^"1^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1949-12-01^",^"neme^":^"1^",^"felmenok_sz^":^"8^",^"sugarzas^":^"3^",^"legsz^":^"7^",^"vizsz^":^"6^",^"vegyi^":^"6^",^"dohany^":^"6^",^"alkesz^":^"7^",^"vhus^":^"7^",^"egelelem^":^"7^",^"nemrostos^":^"6^",^"sulyfeles^":^"7^",^"mozgas^":^"5^",^"stressz^":^"7^",^"alvas^":^"7^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1949-12-01^",^"neme^":^"1^",^"felmenok_sz^":^"9^",^"sugarzas^":^"3^",^"legsz^":^"7^",^"vizsz^":^"7^",^"vegyi^":^"3^",^"dohany^":^"10^",^"alkesz^":^"3^",^"vhus^":^"6^",^"egelelem^":^"4^",^"nemrostos^":^"5^",^"sulyfeles^":^"1^",^"mozgas^":^"2^",^"stressz^":^"7^",^"alvas^":^"6^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1949-12-01^",^"neme^":^"1^",^"felmenok_sz^":^"8^",^"sugarzas^":^"1^",^"legsz^":^"3^",^"vizsz^":^"5^",^"vegyi^":^"2^",^"dohany^":^"5^",^"alkesz^":^"3^",^"vhus^":^"7^",^"egelelem^":^"1^",^"nemrostos^":^"6^",^"sulyfeles^":^"4^",^"mozgas^":^"8^",^"stressz^":^"10^",^"alvas^":^"6^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1949-12-01^",^"neme^":^"1^",^"felmenok_sz^":^"8^",^"sugarzas^":^"1^",^"legsz^":^"3^",^"vizsz^":^"5^",^"vegyi^":^"2^",^"dohany^":^"5^",^"alkesz^":^"3^",^"vhus^":^"7^",^"egelelem^":^"1^",^"nemrostos^":^"6^",^"sulyfeles^":^"4^",^"mozgas^":^"8^",^"stressz^":^"10^",^"alvas^":^"6^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1475896323^",^"bdate^":^"2025-05-14^",^"neme^":^"1^",^"felmenok_sz^":^"6^",^"sugarzas^":^"7^",^"legsz^":^"2^",^"vizsz^":^"1^",^"vegyi^":^"1^",^"dohany^":^"1^",^"alkesz^":^"1^",^"vhus^":^"1^",^"egelelem^":^"1^",^"nemrostos^":^"1^",^"sulyfeles^":^"1^",^"mozgas^":^"1^",^"stressz^":^"1^",^"alvas^":^"5^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1949-12-01^",^"neme^":^"1^",^"felmenok_sz^":^"4^",^"sugarzas^":^"7^",^"legsz^":^"3^",^"vizsz^":^"8^",^"vegyi^":^"2^",^"dohany^":^"8^",^"alkesz^":^"4^",^"vhus^":^"8^",^"egelelem^":^"1^",^"nemrostos^":^"7^",^"sulyfeles^":^"4^",^"mozgas^":^"8^",^"stressz^":^"2^",^"alvas^":^"7^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1998-12-02^",^"neme^":^"1^",^"felmenok_sz^":^"9^",^"sugarzas^":^"3^",^"legsz^":^"7^",^"vizsz^":^"3^",^"vegyi^":^"8^",^"dohany^":^"5^",^"alkesz^":^"7^",^"vhus^":^"1^",^"egelelem^":^"7^",^"nemrostos^":^"7^",^"sulyfeles^":^"7^",^"mozgas^":^"1^",^"stressz^":^"3^",^"alvas^":^"6^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1978-05-18^",^"neme^":^"0^",^"felmenok_sz^":^"8^",^"sugarzas^":^"3^",^"legsz^":^"7^",^"vizsz^":^"6^",^"vegyi^":^"3^",^"dohany^":^"5^",^"alkesz^":^"6^",^"vhus^":^"6^",^"egelelem^":^"4^",^"nemrostos^":^"3^",^"sulyfeles^":^"7^",^"mozgas^":^"6^",^"stressz^":^"4^",^"alvas^":^"7^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1991-01-11^",^"neme^":^"1^",^"felmenok_sz^":^"7^",^"sugarzas^":^"3^",^"legsz^":^"7^",^"vizsz^":^"3^",^"vegyi^":^"8^",^"dohany^":^"3^",^"alkesz^":^"1^",^"vhus^":^"7^",^"egelelem^":^"9^",^"nemrostos^":^"7^",^"sulyfeles^":^"2^",^"mozgas^":^"2^",^"stressz^":^"7^",^"alvas^":^"5^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1997-12-15^",^"neme^":^"1^",^"felmenok_sz^":^"4^",^"sugarzas^":^"3^",^"legsz^":^"7^",^"vizsz^":^"7^",^"vegyi^":^"3^",^"dohany^":^"7^",^"alkesz^":^"6^",^"vhus^":^"7^",^"egelelem^":^"2^",^"nemrostos^":^"8^",^"sulyfeles^":^"3^",^"mozgas^":^"7^",^"stressz^":^"3^",^"alvas^":^"8^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1982-05-12^",^"neme^":^"1^",^"felmenok_sz^":^"4^",^"sugarzas^":^"5^",^"legsz^":^"5^",^"vizsz^":^"3^",^"vegyi^":^"8^",^"dohany^":^"7^",^"alkesz^":^"3^",^"vhus^":^"7^",^"egelelem^":^"3^",^"nemrostos^":^"7^",^"sulyfeles^":^"2^",^"mozgas^":^"4^",^"stressz^":^"7^",^"alvas^":^"5^"^}^'
+Output: {"diagnosis": 0, "probability": 50.0, "error": "Expecting value: line 1 column 1 (char 0)"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1235678999^",^"bdate^":^"1999-02-02^",^"neme^":^"1^",^"felmenok_sz^":^"6^",^"sugarzas^":^"6^",^"legsz^":^"3^",^"vizsz^":^"3^",^"vegyi^":^"3^",^"dohany^":^"3^",^"alkesz^":^"3^",^"vhus^":^"3^",^"egelelem^":^"3^",^"nemrostos^":^"2^",^"sulyfeles^":^"2^",^"mozgas^":^"2^",^"stressz^":^"2^",^"alvas^":^"2^"^}^'
+Output: {"diagnosis": 0, "probability": 65.0, "error": "Fallback prediction used"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234678999^",^"bdate^":^"1909-12-15^",^"neme^":^"1^",^"felmenok_sz^":^"3^",^"sugarzas^":^"10^",^"legsz^":^"10^",^"vizsz^":^"10^",^"vegyi^":^"10^",^"dohany^":^"10^",^"alkesz^":^"10^",^"vhus^":^"10^",^"egelelem^":^"10^",^"nemrostos^":^"10^",^"sulyfeles^":^"10^",^"mozgas^":^"10^",^"stressz^":^"10^",^"alvas^":^"10^"^}^'
+Output: {"diagnosis": 0, "probability": 65.0, "error": "Fallback prediction used"}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567899^",^"bdate^":^"1989-02-12^",^"neme^":^"1^",^"felmenok_sz^":^"3^",^"sugarzas^":^"3^",^"legsz^":^"2^",^"vizsz^":^"8^",^"vegyi^":^"3^",^"dohany^":^"8^",^"alkesz^":^"2^",^"vhus^":^"10^",^"egelelem^":^"5^",^"nemrostos^":^"5^",^"sulyfeles^":^"5^",^"mozgas^":^"4^",^"stressz^":^"3^",^"alvas^":^"3^"^}^'
+Output: {"diagnosis": 0, "probability": 71.48}
+
+Python path: C:\Users\w10\ai_env\Scripts\python.exe
+Script path: G:\xampp\htdocs\AI/run_patient.py
+Command: C:^\Users^\w10^\ai_env^\Scripts^\python.exe ^"G:^\xampp^\htdocs^\AI/run_patient.py^" ^'^{^"szsz^":^"1234567891^",^"bdate^":^"1925-12-31^",^"neme^":^"1^",^"felmenok_sz^":^"10^",^"sugarzas^":^"10^",^"legsz^":^"10^",^"vizsz^":^"10^",^"vegyi^":^"9^",^"dohany^":^"1^",^"alkesz^":^"8^",^"vhus^":^"8^",^"egelelem^":^"8^",^"nemrostos^":^"8^",^"sulyfeles^":^"8^",^"mozgas^":^"7^",^"stressz^":^"6^",^"alvas^":^"8^"^}^'
+Output: {"diagnosis": 0, "probability": 71.81}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="icon.png">
+  <title>Kep Elemzes - Aspiracios Citodiagnosztika</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="query-container" style="max-width: 600px;">
+  <h1 class="query-title">Kép-alapú aspirációs citodiagnosztika elemzése</h1>
+
+  <!--
+  <div class="requirements">
+    <h3>Feltöltési követelmények:</h3>
+    <ul>
+      <li>Támogatott formátumok: JPG, PNG</li>
+      <li>Maximum fájlméret: 5MB</li>
+      <li>Legjobb eredmény érdekében a kép legyen tiszta és jól megvilágított</li>
+    </ul>
+  </div>
+
+  -->
+
+  <form action="image_analysis.php" method="post" enctype="multipart/form-data">
+    <div class="image-container">
+      <div class="file-upload">
+        <input type="file" name="tumor_image" id="tumor_image" accept="image/jpeg, image/png" required>
+        <span class="upload-text">Válassza ki a képet</span>
+      </div>
+      <img id="preview-image" class="image-preview" alt="Előnézet">
+    </div>
+
+    <div class="form-group">
+      <label for="szsz">Személyi szám:</label>
+      <input type="text" id="szsz" name="szsz" placeholder="Személyi szám" required>
+    </div>
+
+    <button type="submit" class="query-btn">Kép elemzése</button>
+
+    <label class="check">
+      <input type="checkbox" id="save_to_db" name="save_to_db">
+      <span class="ch-text">Eredmény mentése adatbázisba</span>
+    </label>
+    <a href="index.html" class="btn"> ⮘ Vissza a kezdőlapra</a>
+  </form>
+</div>
+
+
+
+<script>
+  document.getElementById('tumor_image').addEventListener('change', function() {
+    const file = this.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const preview = document.getElementById('preview-image');
+        preview.src = e.target.result;
+        preview.style.display = 'block';
+      }
+      reader.readAsDataURL(file);
+      document.querySelector('.upload-text').textContent = file.name;
+    }
+  });
+</script>
+</body>
+</html>

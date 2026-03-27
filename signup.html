@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="icon.png">
+    <title>Sing-in/Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth-container">
+    <!-- sign-up -->
+    <div class="auth-form signup-form">
+        <h2 class="auth-title">Regisztráció</h2>
+        <form id="signupForm" action="signup_proc.php" method="POST">
+            <div class="auth-input-group">
+                <label for="name">Teljes név</label>
+                <input type="text" id="name" name="name" required placeholder="Adja meg a nevét">
+            </div>
+
+            <div class="auth-input-group">
+                <label for="personalId">Személyi szám</label>
+                <input type="text" id="personalId" name="personalId" required placeholder="Adja meg a személyi számát">
+            </div>
+
+            <div class="auth-input-group">
+                <label for="email">Email cím</label>
+                <input type="email" id="email" name="email" required placeholder="pelda@email.com">
+            </div>
+
+            <div class="auth-input-group">
+                <label for="password">Jelszó</label>
+                <input type="password" id="password" name="password" required placeholder="Adjon meg egy jelszót">
+            </div>
+
+            <div class="auth-check">
+                <input type="checkbox" id="isDoctor" name="isDoctor">
+                <label for="isDoctor" class="ch-text">Orvos vagyok</label>
+            </div>
+
+            <button type="submit" class="auth-btn">Regisztráció</button>
+        </form>
+        <p class="auth-switch">Már van fiókja? <a href="#" id="showLogin">Bejelentkezés</a></p>
+    </div>
+
+    <!-- sign-in -->
+    <div class="auth-form signin-form hidden">
+        <h2 class="auth-title">Bejelentkezés</h2>
+        <form id="signinForm" action="signin_proc.php" method="POST">
+            <div class="auth-input-group">
+                <label for="loginEmail">Email cím</label>
+                <input type="email" id="loginEmail" name="loginEmail" required placeholder="pelda@email.com">
+            </div>
+
+            <div class="auth-input-group">
+                <label for="loginPassword">Jelszó</label>
+                <input type="password" id="loginPassword" name="loginPassword" required placeholder="Adja meg a jelszavát">
+            </div>
+
+            <button type="submit" class="auth-btn">Bejelentkezés</button>
+        </form>
+        <p class="auth-switch">Nincs még fiókja? <a href="#" id="showSignup">Regisztráció</a></p>
+    </div>
+
+    <div class="auth-actions">
+        <a href="index.html" class="btn back-btn">Vissza a Főoldalra</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('showLogin').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('.signup-form').classList.add('hidden');
+        document.querySelector('.signin-form').classList.remove('hidden');
+    });
+
+    document.getElementById('showSignup').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('.signin-form').classList.add('hidden');
+        document.querySelector('.signup-form').classList.remove('hidden');
+    });
+</script>
+</body>
+</html>

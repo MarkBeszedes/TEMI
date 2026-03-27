@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="icon.png">
+    <title>Diagnosztikai Eredmenyek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="query-container">
+    <h1 class="query-title">Diagnosztikai Eredmények Lekérdezése</h1>
+    <form action="queryproc.php" method="post">
+        <label for="szsz">Adja meg a páciens személyi számát!</label>
+        <input type="text" id="szsz" name="szsz" class="query-input" placeholder="személyi szám" required>
+        <button type="submit" class="query-btn">Lekérdezés</button>
+    </form>
+</div>
+<a href="index.html" class="btn"> ⮘ Vissza a kezdőlapra</a>
+</body>
+</html>

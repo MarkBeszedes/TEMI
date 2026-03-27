@@ -1,0 +1,50 @@
+Starting analysis of uploads/67f2c3e462e6e_ON-CO879_CoverI_B620_20180622210519.jpg
+Analyzed uploads/67f2c3e462e6e_ON-CO879_CoverI_B620_20180622210519.jpg: {"diagnosis": 0, "probability": 73.01510620117188}
+Starting analysis of uploads/67f2c4610193a_ON-CO879_CoverI_B620_20180622210519.jpg
+Analyzed uploads/67f2c4610193a_ON-CO879_CoverI_B620_20180622210519.jpg: {"diagnosis": 0, "probability": 73.01510620117188}
+Starting analysis of uploads/67f2c4d566916_ON-CO879_CoverI_B620_20180622210519.jpg
+Analyzed uploads/67f2c4d566916_ON-CO879_CoverI_B620_20180622210519.jpg: {"diagnosis": 0, "probability": 73.01510620117188}
+Starting analysis of uploads/67f2d57af21fc_ON-CO879_CoverI_B620_20180622210519.jpg
+Analyzed uploads/67f2d57af21fc_ON-CO879_CoverI_B620_20180622210519.jpg: {"diagnosis": 0, "probability": 73.01510620117188}
+Starting analysis of uploads/67f439bfd4f1f_normal.png
+Analyzed uploads/67f439bfd4f1f_normal.png: {"diagnosis": 1, "probability": 60.64391326904297}
+Starting analysis of uploads/67f43f723c6bc_rosszindulatu.png
+Analyzed uploads/67f43f723c6bc_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/67f442c26461a_rosszindulatu.png
+Analyzed uploads/67f442c26461a_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/68283cdfd26f4_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/68283cdfd26f4_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/68284341c05d2_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/68284341c05d2_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/68388b9b19bdc_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/68388b9b19bdc_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/6838b059104bd_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/6838b059104bd_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/6838b069b01fa_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/6838b069b01fa_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/6838b55e2c37d_67dbe118640ce_rosszindulatu2.png
+Analyzed uploads/6838b55e2c37d_67dbe118640ce_rosszindulatu2.png: {"diagnosis": 0, "probability": 63.11823272705078}
+Starting analysis of uploads/683957206bab5_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/683957206bab5_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/683971a0da91a_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/683971a0da91a_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/683971b1476f6_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/683971b1476f6_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/683983421ec1b_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/683983421ec1b_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/6839a545d6167_67dbe118640ce_rosszindulatu2.png
+Analyzed uploads/6839a545d6167_67dbe118640ce_rosszindulatu2.png: {"diagnosis": 0, "probability": 63.11823272705078}
+Starting analysis of uploads/6839a55586059_67dbe118640ce_rosszindulatu2.png
+Analyzed uploads/6839a55586059_67dbe118640ce_rosszindulatu2.png: {"diagnosis": 0, "probability": 63.11823272705078}
+Starting analysis of uploads/6839a7fc799db_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/6839a7fc799db_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/6839bd853d15b_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/6839bd853d15b_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/683ac1a44d3e1_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/683ac1a44d3e1_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/683adcff45076_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/683adcff45076_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/6842e559cea57_67db1a08e706f_rosszindulatu.png
+Analyzed uploads/6842e559cea57_67db1a08e706f_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}
+Starting analysis of uploads/692ae73a1e9fc_67f442c26461a_rosszindulatu.png
+Analyzed uploads/692ae73a1e9fc_67f442c26461a_rosszindulatu.png: {"diagnosis": 0, "probability": 65.0057601928711}

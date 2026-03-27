@@ -1,0 +1,143 @@
+2025-04-06 14:31:52 Command: python analyze_image.py "uploads/67f26dd87a8b7_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:31:53 Command: python analyze_image.py "uploads/67f26de985e5e_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:31:53 Command: python analyze_image.py "uploads/67f27433838ba_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:31:53 Analyzed 3 images
+2025-04-06 14:31:58 Command: python analyze_image.py "uploads/67f27433838ba_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:32:01 Command: python analyze_image.py "uploads/67f26de985e5e_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:32:03 Command: python analyze_image.py "uploads/67f26dd87a8b7_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:41:55 Command: python analyze_image.py "uploads/67f26dd87a8b7_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:41:55 Command: python analyze_image.py "uploads/67f26de985e5e_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:41:56 Command: python analyze_image.py "uploads/67f27433838ba_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:41:56 Analyzed 3 images
+2025-04-06 14:41:59 Command: python analyze_image.py "uploads/67f27433838ba_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:42:02 Command: python analyze_image.py "uploads/67f26de985e5e_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:42:04 Command: python analyze_image.py "uploads/67f26dd87a8b7_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:42:50 Command: python analyze_image.py "uploads/67f26dd87a8b7_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:42:51 Command: python analyze_image.py "uploads/67f26de985e5e_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:42:51 Command: python analyze_image.py "uploads/67f27433838ba_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:42:51 Analyzed 3 images
+2025-04-06 14:42:54 Command: python analyze_image.py "uploads/67f27433838ba_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:42:57 Command: python analyze_image.py "uploads/67f26de985e5e_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:42:59 Command: python analyze_image.py "uploads/67f26de985e5e_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:43:03 Command: python analyze_image.py "uploads/67f26dd87a8b7_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+
+2025-04-06 14:43:03 Command: python analyze_image.py "uploads/67f27433838ba_ON-CO879_CoverI_B620_20180622210519.jpg"
+Output: Traceback (most recent call last):
+  File "G:\xampp\htdocs\AI\analyze_image.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+

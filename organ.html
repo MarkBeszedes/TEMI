@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="icon.png">
+    <title>TEMI-Szervek</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .organ-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(15, 77, 146, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .organ-button {
+            display: block;
+            padding: 20px 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            background: #0d47a1;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(21, 101, 192, 0.5);
+            width: 100%;
+        }
+
+        .organ-button:hover {
+            background: #1565c0;
+            box-shadow: 0 0 10px #42a5f5, 0 0 40px #42a5f5, 0 0 60px #42a5f5;
+        }
+
+        .organ-button:active {
+            transform: scale(0.98);
+        }
+
+        @media screen and (max-width: 768px) {
+            .organ-container {
+                grid-template-columns: repeat(2, 1fr);
+                width: 95%;
+                padding: 15px;
+            }
+
+            .organ-button {
+                font-size: 1em;
+                padding: 15px 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .organ-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Szövet és Szerv terület kiválasztása:</h1>
+
+<div class="organ-container">
+    <a href="webin.html" class="organ-button">Mell</a>
+    <a href="webin.html" class="organ-button">Tüdő</a>
+    <a href="webin.html" class="organ-button">Agy</a>
+    <a href="webin.html" class="organ-button">Hasnyálmirígy</a>
+    <a href="webin.html" class="organ-button">Máj</a>
+    <a href="webin.html" class="organ-button">Vér</a>
+    <a href="webin.html" class="organ-button">Vastagbél</a>
+    <a href="webin.html" class="organ-button">Pajzsmirígy</a>
+    <a href="webin.html" class="organ-button">Nyelőcső és gége</a>
+    <a href="webin.html" class="organ-button">Érrendszer</a>
+    <a href="webin.html" class="organ-button">Gyomor</a>
+    <a href="webin.html" class="organ-button">Húgyhólyag</a>
+    <a href="webin.html" class="organ-button">Prosztata</a>
+    <a href="webin.html" class="organ-button">Csont</a>
+    <a href="webin.html" class="organ-button">Vese</a>
+    <a href="webin.html" class="organ-button">Fej és nyak</a>
+</div>
+
+<a href="index.html" class="btn"> ⮘ Vissza a kezdőlapra</a>
+
+</body>
+</html>

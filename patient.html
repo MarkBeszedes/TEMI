@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="icon.png">
+    <title>TEMI - Predikció és távdiagnosztika</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .prediction-form {
+            background: rgba(15, 77, 146, 0.7);
+            border-radius: 15px;
+            padding: 40px;
+            width: 90%;
+            max-width: 650px;
+            margin: 30px auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 15px rgba(66, 165, 245, 0.5);
+            animation: formGlow 3s infinite alternate;
+        }
+
+        @keyframes formGlow {
+            from {
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 15px rgba(66, 165, 245, 0.5);
+            }
+            to {
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 25px rgba(66, 165, 245, 0.8);
+            }
+        }
+
+        .form-title {
+            font-size: 2em;
+            color: #d4f1f9;
+            text-shadow: 0 0 10px #42a5f5, 0 0 20px #42a5f5;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        /* Section title styling */
+        .section-title {
+            font-size: 1.4em;
+            color: #d4f1f9;
+            text-shadow: 0 0 8px #42a5f5;
+            margin: 35px 0 20px 0;
+            padding: 15px 20px;
+            background: rgba(66, 165, 245, 0.15);
+            border-radius: 10px;
+            border-left: 4px solid #42a5f5;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="date"] {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid rgba(66, 165, 245, 0.5);
+            background: rgba(255, 255, 255, 0.95);
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group input:focus {
+            border-color: #42a5f5;
+            box-shadow: 0 0 15px rgba(66, 165, 245, 0.7);
+            outline: none;
+            transform: translateY(-2px);
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 30px;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .radio-option:hover {
+            background: rgba(66, 165, 245, 0.2);
+        }
+
+        .radio-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .radio-option label {
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        /* Scale slider styling */
+        .scale-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .scale-item {
+            position: relative;
+            padding: 15px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .scale-item:hover {
+            background: rgba(66, 165, 245, 0.1);
+        }
+
+        .scale-item label {
+            display: block;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .scale-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        /* Custom slider */
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 12px;
+            border-radius: 10px;
+            background: linear-gradient(to right, #0a2a4a, #42a5f5);
+            outline: none;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+            margin-bottom: 10px;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #d4f1f9;
+            box-shadow: 0 0 10px rgba(66, 165, 245, 0.8);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px rgba(66, 165, 245, 1);
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #d4f1f9;
+            box-shadow: 0 0 10px rgba(66, 165, 245, 0.8);
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        .slider::-moz-range-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px rgba(66, 165, 245, 1);
+        }
+
+        /* Scale marks */
+        .scale-marks {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-top: 5px;
+        }
+
+        .scale-mark {
+            font-size: 0.8em;
+            color: #d4f1f9;
+            width: 25px;
+            text-align: center;
+        }
+
+        /* Value indicator */
+        .value-indicator {
+            position: relative;
+            width: 40px;
+            height: 30px;
+            background: #0f4d92;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(66, 165, 245, 0.5);
+            margin-bottom: 10px;
+            transition: all 0.3s;
+        }
+
+        .value-indicator::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #0f4d92;
+        }
+
+        .scale-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            padding: 0 15px;
+        }
+
+        .scale-labels span {
+            font-size: 0.85em;
+            color: #d4f1f9;
+        }
+
+        .required-label::after {
+            content: " *";
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .form-footer {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 14px 24px;
+            background: rgba(13, 71, 161, 0.7);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-link:hover {
+            background: rgba(21, 101, 192, 0.8);
+            transform: translateY(-3px);
+            box-shadow: 0 0 10px rgba(66, 165, 245, 0.7), 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            padding: 14px 30px;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .btn:hover {
+            transform: scale(1.05) translateY(-3px);
+        }
+
+        /* Form validation styling */
+        input:invalid {
+            border-color: #ff6b6b;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .prediction-form {
+                padding: 25px;
+            }
+
+            .form-title {
+                font-size: 1.7em;
+            }
+
+            .section-title {
+                font-size: 1.2em;
+                margin: 25px 0 15px 0;
+                padding: 12px 15px;
+            }
+
+            .radio-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .radio-option {
+                padding: 12px 15px;
+            }
+
+            .form-footer {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .back-link, .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .back-link {
+                order: 2;
+            }
+
+            .btn {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Tumor Elemzés Mesterséges Intelligenciával</h1>
+
+<div class="prediction-form">
+    <div class="form-title">Predikció és távdiagnosztika</div>
+
+    <form id="patientForm" action="process_prediction.php" method="POST">
+
+        <div class="section-title">Személyes adatok</div>
+
+        <!-- Personal ID -->
+        <div class="form-group">
+            <label for="szsz" class="required-label">Személyi szám:</label>
+            <input type="text" id="szsz" name="szsz" required
+                   pattern="[0-9]{6}[0-9]{4}"
+                   title="Kérjük, adjon meg egy érvényes személyi számot (10 számjegy)"
+                   placeholder="Adja meg a személyi számát!">
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="bdate" class="required-label">Születési dátum:</label>
+            <input type="date" id="bdate" name="bdate" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <label class="required-label">Neme:</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="gender-male" name="gender" value="1" required>
+                    <label for="gender-male">Férfi</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="gender-female" name="gender" value="0">
+                    <label for="gender-female">Nő</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">Genetikai és környezeti tényezők</div>
+
+        <div class="form-group">
+            <label>Az alábbi állítások mennyire jellemzőek Önre? <br> (1: egyáltalán nem - 10: teljes mértékben)</label>
+            <div class="scale-container">
+                <div class="scale-item">
+                    <label for="marker1">Felmenőknél (dédszülőkig) <br> jelentkezett tumoros megbetegedések száma</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker1-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="0" max="14" value="0" class="slider" id="marker1" name="marker1">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Egyáltalán nem</span>
+                            <span>Több esetben</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker2">Sugárdózisnak való kitettség mértéke<br>(pl: Ultraibolya (UV), Röntgen, Nukleáris sugárzás)</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker2-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker2" name="marker2">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Alacsony</span>
+                            <span>Jelentős</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker3">Légszennyezésnek való kitettség <br>(pl: szállópor, nitrogén dioxid, Radon)</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker3-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker3" name="marker3">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Alacsony</span>
+                            <span>Magas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker4">Vízszennyezettségnek való kitettség <br>(pl: arzénkoncentráció)</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker4-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker4" name="marker4">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Alacsony</span>
+                            <span>Magas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker5">Vegyi anyagoknak való kitettség<br>(pl: Azbeszt, Benzol, Kadmium, Króm-Nikkel)</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker5-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker5" name="marker5">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Alacsony</span>
+                            <span>Magas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">Életmódbeli tényezők</div>
+
+        <div class="form-group">
+            <div class="scale-container">
+                <div class="scale-item">
+                    <label for="marker6">Dohányzás gyakorisága<br>(passzív dohányzás esetén is)</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker6-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker6" name="marker6">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Soha</span>
+                            <span>Rendszeresen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker7">Alkoholfogyasztás gyakorisága</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker7-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker7" name="marker7">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Soha</span>
+                            <span>Rendszeresen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">Táplálkozási szokások</div>
+
+        <div class="form-group">
+            <div class="scale-container">
+                <div class="scale-item">
+                    <label for="marker8">Vörös és feldolgozott húsok fogyasztása</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker8-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker8" name="marker8">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Ritkán</span>
+                            <span>Naponta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker9">Égett élelmiszerek fogyasztása (pl grillezés)</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker9-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker9" name="marker9">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Ritkán</span>
+                            <span>Naponta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker10">Alacsony rosttartalú étrend hiánya<br>(Gyümölcsök, zöldségek)</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker10-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker10" name="marker10">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Gyakran fogyasztok<br>Magas Rosttartalmú élelmiszert</span>
+                            <span>Egyáltalán nem fogyasztok<br>Magas Rosttartalmú élelmiszert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">Fizikai és mentális egészség</div>
+
+        <div class="form-group">
+            <div class="scale-container">
+                <div class="scale-item">
+                    <label for="marker11">Súlyfelesleg mértéke</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker11-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker11" name="marker11">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Nincs</span>
+                            <span>Jelentős</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker12">NEM jellemző rám a rendszeres testmozgás</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker12-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker12" name="marker12">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Rendszeressen mozgok</span>
+                            <span>Nagyon RITKÁN mozgok</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker13">Stresszkitettség mértéke</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker13-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker13" name="marker13">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Egyáltalán nem stresszelek</span>
+                            <span>Komoly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scale-item">
+                    <label for="marker14">Alváshiány<br>(Előírtnál kevesebbet alszom)</label>
+                    <div class="scale-wrapper">
+                        <div class="value-indicator" id="marker14-value">1</div>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="marker14" name="marker14">
+                        </div>
+                        <div class="scale-labels">
+                            <span>Egyáltalán nem jellemző</span>
+                            <span>Teljes mértékben jellemző rám</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="form-footer">
+            <a href="index.html" class="back-link">Vissza</a>
+            <button type="submit" class="btn">Elemzés futtatása</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Update value indicators and handle slider interactions
+    document.querySelectorAll('.slider').forEach(slider => {
+        const valueIndicator = document.getElementById(`${slider.id}-value`);
+
+        // Initialize
+        valueIndicator.textContent = slider.value;
+        updateSliderStyle(slider);
+
+        // Update on input
+        slider.addEventListener('input', function() {
+            valueIndicator.textContent = this.value;
+            updateSliderStyle(this);
+
+            // Add visual feedback to slider item
+            const scaleItem = this.closest('.scale-item');
+            if (parseInt(this.value) > 1) {
+                const intensity = (parseInt(this.value) / 10) * 0.3;
+                scaleItem.style.backgroundColor = `rgba(66, 165, 245, ${intensity})`;
+                scaleItem.style.boxShadow = `0 0 ${parseInt(this.value) * 2}px rgba(66, 165, 245, ${intensity + 0.2})`;
+            } else {
+                scaleItem.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                scaleItem.style.boxShadow = 'none';
+            }
+        });
+    });
+
+    // Function to update slider visual style based on value
+    function updateSliderStyle(slider) {
+        const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+        slider.style.background = `linear-gradient(to right, #42a5f5 0%, #42a5f5 ${value}%, #0a2a4a ${value}%, #0a2a4a 100%)`;
+    }
+
+    // Fix for radio button selection
+    document.querySelectorAll('.radio-option').forEach(item => {
+        item.addEventListener('click', function(e) {
+            // Prevent multiple events from firing
+            if (e.target.tagName !== 'INPUT') {
+                // Find the input inside this container
+                const input = this.querySelector('input');
+                if (input) {
+                    input.checked = true;
+
+                    // Reset style of all radio options
+                    document.querySelectorAll('.radio-option').forEach(opt => {
+                        opt.style.backgroundColor = '';
+                        opt.style.boxShadow = '';
+                    });
+
+                    // Style this option
+                    this.style.backgroundColor = 'rgba(66, 165, 245, 0.3)';
+                    this.style.boxShadow = '0 0 10px rgba(66, 165, 245, 0.5)';
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
